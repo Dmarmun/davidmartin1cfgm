@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado</title>
+</head>
+<body>
+    <script>
+        let lado;
+        function cuadrado() {
+            lado=parseInt(prompt("Introduce la medida del lado de un cuadrado"));
+            lado=lado*4;
+            return "La medida del lado es: "+lado+" y la del  perimetro del cuadrado son: "+lado;
+        }
+        let resultado=cuadrado();
+        document.write(resultado);
+    </script>
+</body>
+</html>

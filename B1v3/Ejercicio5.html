@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precio y articulo</title>
+</head>
+<body>
+    <script>
+        function cesta(nproducts, price, total) {
+            
+            return "Los "+nproducts+" productos con valor de "+price+"€ cada uno, suman un total de "+total+"€.";
+        }
+        nproductos=parseInt(prompt("Introduce el número de articulos."));
+        precio=parseInt(prompt("Introduce el precio del producto."));
+        totales=precio*nproductos;
+        let resultado=cesta(nproductos, precio, totales);
+        document.write(resultado);
+    </script>
+</body>
+</html>

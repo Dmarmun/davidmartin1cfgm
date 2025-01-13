@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio con for</title>
+</head>
+<body>
+    <script>
+        function promedio() {
+            let temporal, nota=0, promedio, suma=0;
+            for (promedio=1;promedio<4;promedio++)
+            {
+            temporal=parseInt(prompt("Introduce la nota"));
+            suma=temporal+nota;
+            nota=suma;
+            console.log("Temporal= "+temporal+" Nota= "+nota)
+            }
+            promedio=nota/3;
+            console.log("Resultado= "+promedio);
+            if (promedio<4)
+            {
+                return "Reprobado";
+            }
+            else
+            {
+                return "Regular";
+            }
+        }
+        let resultado=promedio();
+        document.write(resultado);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operación si son iguales</title>
+</head>
+<body>
+    <script>
+        let num1, num2, num3;
+        function igual() {
+            num1=parseInt(prompt("Introduce el primer número"));
+            num2=parseInt(prompt("Introduce el segundo número"));
+            num3=parseInt(prompt("Introduce el tercer número"));
+            if (num1==num2 & num2==num3) {
+                return "El resultado de su suma y multiplicación es "+((num1+num2)*num3);
+            }
+            else {
+                return "Los números no son iguales";
+            }
+        }
+        let resultado=igual();
+        document.write(resultado);
+    </script>
+</body>
+</html>

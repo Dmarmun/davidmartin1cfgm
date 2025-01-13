@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma y producto</title>
+</head>
+<body>
+    <script>
+        let n1, n2, n3, n4, suma, producto;
+        n1=parseInt(prompt("Introduce el primer número."));
+        n2=parseInt(prompt("Introduce el segundo número."));
+        n3=parseInt(prompt("Introduce el tercer número."));
+        n4=parseInt(prompt("Introduce el cuarto número."));
+        suma=n1+n2+n3+n4;
+        producto=n1*n2*n3*n4;
+        function Suma() {
+            return "El resultado de la suma es "+suma;
+        }
+        function Producto() {
+            return "El de la multiplicación "+producto;
+        }
+        let resultado1=Suma();
+        document.write(resultado1+"<br>");
+        let resultado2=Producto();
+        document.write(resultado2+"<br>");
+    </script>
+</body>
+</html>

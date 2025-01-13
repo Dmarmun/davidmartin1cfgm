@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo</title>
+</head>
+<body>
+    <script>
+        function calculadora(sueldo, antiguedad) {
+            if (sueldo<500) {
+                if (antiguedad<10) {
+                    return "Tu sueldo es de "+(sueldo*0.05+sueldo);
+                }
+                else {
+                    return "Tu sueldo es de "+(sueldo*0.20+sueldo);
+                }
+            }
+            else {
+                return "Tu sueldo es de "+sueldo;
+            }
+        }
+        dinero=parseInt(prompt("Introduce tu sueldo"));
+        años=parseInt(prompt("Introduce tus años de antigüedad"));
+        let resultado=calculadora(dinero, años);
+        document.write(resultado);
+    </script>
+</body>
+</html>

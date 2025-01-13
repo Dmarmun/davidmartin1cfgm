@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña</title>
+</head>
+<body>
+    <script>
+        function clave(password1, password2) {
+            
+            if (password1==password2)
+            {
+                return "Las claves son iguales.";
+            }
+            else
+            {
+                return "Las claves no son iguales.";
+            }
+        }
+        clave1=prompt("Introduce una clave.");
+        clave2=prompt("Vuelve a intrducir la clave.");
+        let resultado=clave(clave1, clave2);
+        document.write(resultado);
+    </script>
+</body>
+</html>

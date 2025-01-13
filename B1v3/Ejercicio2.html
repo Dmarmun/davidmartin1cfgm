@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario y correo</title>
+</head>
+<body>
+    <script>
+        function usuarioCorreo(user, mail) {
+            return "El usuario es: "+user+" y el correo es: "+mail;
+        }
+        usuario=prompt("Introduce tu nombre de usuario.");
+        correo=prompt("Introduce tu correo.");
+        let resultado=usuarioCorreo(usuario, correo);
+        document.write(resultado);
+    </script>
+</body>
+</html>

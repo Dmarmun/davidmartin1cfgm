@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta</title>
+    <script>
+        function calcularImporte(){
+            const pizza=document.getElementById("pizza").value;
+            const cantidad=parseInt(document.getElementById("cantidad").value);
+            const total=pizza*cantidad;
+            document.getElementById("importe").value=total;
+        }
+    </script>
+</head>
+<body>
+    <label for="pizza">Seleccione una pizza:</label>
+    <select id="pizza">
+        <option value="4">Queso-$4</option>
+        <option value="6">Jamón y Queso-$6</option>
+        <option value="10">Especial-$10</option>
+    </select>
+    <br><br>
+    <label for="cantidad">Cantidad de pizzas:</label>
+    <input type="text" id="cantidad">
+    <br><br>
+    <button onclick="calcularImporte()">Calcular Importe</button>
+    <br><br>
+    <label for="importe">Importe total a abonar:</label>
+    <input type="text" id="importe">
+</body>
+</html></select>

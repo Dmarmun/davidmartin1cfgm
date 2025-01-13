@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de positividad</title>
+</head>
+<body>
+    <script>
+        let num;
+        function positivo() {
+            num=parseInt(prompt("Introduce un número"));
+            if (num>0) {
+                return "El número es positivo";
+            }
+            else {
+                if (num<0) {
+                    return "El número es negativo";
+                }
+                else {
+                    return "El número es cero";
+                }
+            }
+        }
+        let resultado=positivo();
+        document.write(resultado);
+    </script>
+</body>
+</html>

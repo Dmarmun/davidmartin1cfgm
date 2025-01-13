@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+</head>
+<script>
+    function mostrarPrecio(){
+        var pizza=document.getElementById("pizzas");
+        var precio=document.getElementById("precio");
+        var precioSeleccionado;
+        switch (select.value){
+            case "jamonQueso":
+                precioSeleccionado = "10€";
+                break;
+            case "mozzarella":
+                precioSeleccionado = "11€";
+                break;
+            case "morrones":
+                precioSeleccionado = "12€";
+                break;
+            default:
+                precioSeleccionado = "";
+        }
+        precio.value = precioSeleccionado;
+    }
+</script>
+<body>
+    <h1>Seleccione un tipo de pizza</h1>
+    <select id="pizzas" onchange="mostrarPrecio()">
+        <option value="jamonQueso">Jamón y Queso</option>
+        <option value="mozzarella">Mozzarella</option>
+        <option value="morrones">Morrones</option>
+    </select>
+    <br><br>
+    <label for="precio">Precio: </label>
+    <input type="text" id="precio">
+</body>
+</html>

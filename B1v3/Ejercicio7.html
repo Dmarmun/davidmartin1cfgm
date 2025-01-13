@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones dependiendo del número mayor</title>
+</head>
+<body>
+    <script>
+        function caso1(n01, n02) {
+            operation1=n01+n02;
+            operation2=n01-n02;
+            return "El primer número es mayor al segundo. La suma de los número es "+operation1+" y la resta es "+operation2+".";
+        }
+        function caso2(n01, n02) {
+            operation1=n01*n02;
+            operation2=n02/n01;
+            return "El primer número es menor al segundo. La multiplicación de los número es "+operation1+" y la división es "+operation2+".";
+        }
+        n1=parseInt(prompt("Introduce el primer número."));
+        n2=parseInt(prompt("Introduce el segundo número."));
+        if (n1>n2)
+        {
+            let resultado=caso1(n1, n2);
+            document.write(resultado);
+        }
+        else
+        {
+            let resultado=caso2(n1, n2);
+            document.write(resultado);
+        }
+    </script>
+</body>
+</html>

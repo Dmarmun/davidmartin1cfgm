@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de dígitos 1</title>
+</head>
+<body>
+    <script>
+        let num;
+        function digitos() {
+            num=parseInt(prompt("Introduce un número entero"));
+            if (num>99) {
+                return "El número tiene más de 2 dígitos";
+            }
+            else {
+                if (num>9) {
+                    return "El número tiene 2 dígitos";
+                }
+                else {
+                    return "El número tiene 1 dígito";
+                }
+            }
+        }
+        let resultado=digitos();
+        document.write(resultado);
+    </script>
+</body>
+</html>
